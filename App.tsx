@@ -27,21 +27,10 @@ const App = () => {
     html: htmlTest,
   };
 
-  const onPress = (_, href) => {
-    console.log(href);
-  };
-
-  const renderersProps = {
-    a: {
-      onPress,
-    },
-  };
-
   return (
     <ScrollView contentContainerStyle={{ paddingHorizontal: 16, backgroundColor: "white", flex: 1 }}>
       <HTML
         contentWidth={width}
-        renderersProps={renderersProps}
         source={source}
         tagsStyles={tagStyles}
       />
